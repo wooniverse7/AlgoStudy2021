@@ -18,5 +18,14 @@
     <ClCompile Include="SLL01.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="SLL_cmd.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DLL.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DLL_textbook.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

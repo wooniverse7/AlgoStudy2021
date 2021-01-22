@@ -93,12 +93,12 @@ public:
 		//0개일때 에러
 	}
 
-	int printAll() {
-		Node* Pointer;
-	while (!(next==NULL)) {
-			
-		}
-	}
+	//int printAll() {
+	//	Node* Pointer;
+	//while (!(Pointer->next == NULL)) {
+	//		
+	//	}
+	//}
 
 	//리스트 비었는지 판별
 	bool empty() {

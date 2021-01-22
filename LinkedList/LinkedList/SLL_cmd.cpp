@@ -12,7 +12,7 @@ class SLL {
 private:
 	Node * head;
 public:
-	SLL(){
+	SLL() {
 		head = new Node;
 		head->next = NULL;
 		head->number = 0;
@@ -59,14 +59,6 @@ public:
 		else
 			return head->next->number;
 	}
-	void printAll() {
-		Node* temp = head->next;
-		while (temp != NULL) {
-			cout << temp->number << " ";
-			temp = temp->next;
-		}
-		cout << '\n';
-	}
 	//리스트 비었는지 판별
 	bool empty() {
 		return head->next == NULL;
@@ -91,9 +83,6 @@ int main() {
 		}
 		else if (cmd == "print") {
 			cout << sll.print() << endl;
-		}
-		else if (cmd == "printAll") {
-			sll.printAll();
 		}
 		else if (cmd == "empty") {
 			cout << sll.empty() << endl;
