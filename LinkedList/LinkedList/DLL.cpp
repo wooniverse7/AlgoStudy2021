@@ -21,7 +21,7 @@ public:
 	~DLL() {
 		while (!empty()) {
 			removeFront();
-		}
+		}	
 	}
 
 	//빈 리스트
@@ -98,24 +98,24 @@ public:
 	}
 
 	// -------   remove   -------
-	// 사이의 b노드 삭제
-	// a->b->c => a->c
-	//void remove(Node* b) {
-	//	Node* a = b->prev;
-	//	Node* c = b->next;
+	// 사이의 b노드 삭제. a->b->c => a->c
+	// 앞 노드의 next와 뒷 노드의 prev만 잇고 해당 노드를 삭제하면 끝.
+	void remove(Node* b) {
+		Node* a = b->prev;
+		Node* c = b->next;
 
-	//	a->next = c;
-	//	c->prev = a;
-	//	delete b;
-	//}
-	// 앞에서 삭제. 헤더->a->b => 헤더->b
-	/*void removeFront() {
-		if (empty()) {
+		a->next = c;
+		c->prev = a;
+		delete b;
+	}
+	// 앞에서 삭제. 헤더 -> a -> b ==> 헤더 -> b
+	void removeFront() {
+		/*if (empty()) {
 			return -1;
-		}
+		}*/
 		remove(header->next);
-	}*/
-	int removeFront() {
+	}
+	/*int removeFront() {
 		Node* node;
 		node = header->next;
 		if (empty()) {
@@ -128,17 +128,24 @@ public:
 			delete node;
 			return deleteValue;
 		}
-	}
+	}*/
 	// 뒤에서 삭제. 삭제할 노드만 입력
-	//void removeBack() {
-	//	remove(trailer->prev);
-	//}
-	int removeBack() {
-
+	void removeBack() {
+		remove(trailer->prev);
 	}
+	//int removeBack() {
+
+	//}
 
 
 	// --- print ---
+	//첫번째 노드 출력
+	void print() {
+		
+		cout << header->next->data << endl;
+
+		//0개일때 에러
+	}
 	int printFront() {
 		if (!empty())
 			return -1;
@@ -159,36 +166,19 @@ public:
 		}
 		cout << '\n';
 	}
-	// 해당 원소를 가지고 있으면 출력
-	int printNum() {
 
-	}
+	// 원하는 원소의 위치 출력
+	int findNum(int n) {
+		Node* temp = header->next;
+		int i = 0;
+		while (temp->data == n) {
 
-	//첫번째 노드 출력
-	void print() {
-		
-		cout << header->next->data << endl;
-
-		//0개일때 에러
+		}
 	}
 };
 
 int main() {
 	DLL dll;
-
-	//dll.addFront(1);
-	//dll.print();
-	//dll.addFront(2);
-	//dll.addFront(3);
-	//dll.addFront(4);
-	//dll.print(); // 에러
-
-	//dll.addBack(1);
-	//dll.print();
-	//dll.addFront(2);
-	//dll.print();
-	//dll.removeFront();
-	//dll.print();
 
 	dll.addFront(1);
 	dll.addFront(2);
@@ -200,6 +190,17 @@ int main() {
 	dll.addBack(7);
 	dll.addBack(8);
 	dll.printAll();
+	cout << dll.findNum(12) << endl;
+	dll.removeFront();
+	dll.removeFront();
+	dll.removeFront();
+	dll.printAll();
+	cout << dll.empty() << endl;
+	dll.removeBack();
+	dll.removeBack();
+	dll.removeBack();
+	dll.printAll();
 
-	const int& a = 10;
+
+	//const int& a = 10;
 }
