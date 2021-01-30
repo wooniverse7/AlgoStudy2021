@@ -4,7 +4,6 @@ using namespace std;
 
 int que[10001];
 int f = 0, r = 0; // front, rear
-//int cursor = -1;
 
 bool empty() {
 	return f == r;
@@ -15,6 +14,7 @@ void push(int num) {
 	que[r] = num;
 	r++;
 }
+
 // pop
 void pop() {
 	if (f == r) {

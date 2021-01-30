@@ -31,6 +31,8 @@ void push_front(int num) {
 		r++; // 사이즈 증가
 	}
 }
+// f=r=10000으로 시작해보기
+
 // push_back
 void push_back(int num) {
 	que[r] = num;
@@ -117,5 +119,8 @@ int main() {
 	}
 }
 
-// push_front의 shift로 인해 O(n) time
+// 시간, 공간 복잡도
+// push_front의 shift로 인해 O(n) time -> 원래는 O(1)
 // O(N) space
+
+// 큐/덱 노드로 구현해보기
