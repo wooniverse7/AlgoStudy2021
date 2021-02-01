@@ -15,9 +15,8 @@ int main() {
 	cin >> t;
 	while (t--) {
 		cin >> n;
-		if (n == 0) {
+		if (n == 0)
 			s.pop();
-		}
 		// else·Î 0Á¦¿Ü
 		else
 			s.push(n);
