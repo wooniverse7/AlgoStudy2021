@@ -45,5 +45,11 @@
     <ClCompile Include="B9328_열쇠.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="0202_벡터.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="0203_노드 리스트.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
