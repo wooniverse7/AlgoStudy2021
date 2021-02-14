@@ -24,7 +24,13 @@
     <ClCompile Include="1158_요세푸스.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="9934_완전이진트리%28수영%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
     <ClCompile Include="9934_완전이진트리.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="14725 개미굴.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
