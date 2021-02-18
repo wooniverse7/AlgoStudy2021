@@ -20,7 +20,7 @@ void makeTree(Node* node, int dep) {
 	node->num = 0;
 	node->lv = dep;
 
-	if (dep == k) return;
+	if (dep == k) return; // 깊이와 k가 같으면 더이상 노드를 만들지 않음
 
 	// 처음에는 노드를 왼쪽, 오른쪽 연결시켜줘야 형태가 만들어짐
 	Node* lf = new Node;
@@ -39,13 +39,15 @@ void makeTree(Node* node, int dep) {
 }
 //중위 순회 고정
 void insert(Node* node, int dep) {
-	if (dep > k) return;
+	if (dep > k) return; // 해당 깊이 까지 데이터를 입력하기 위해 같은 값까지 들어갈 수 있게 해줌
 
 	insert(node->left, dep + 1);
 	node->num = build[idx++];
+	//stage[dep].push_back(node->num); // 바로 입력해도됨
 	insert(node->right, dep + 1);
 }
 
+// 중위순회에 바로 입렵해도 된다.
 void getStage(Node* node, int dep) {
 	if (dep > k) return;
 
