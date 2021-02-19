@@ -51,5 +51,14 @@
     <ClCompile Include="0203_노드 리스트.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="0206_트리.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="0219_우선순위큐.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="0219_힙.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
