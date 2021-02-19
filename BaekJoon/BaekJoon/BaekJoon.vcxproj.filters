@@ -51,5 +51,8 @@
     <ClCompile Include="7785 회사에 있는 사람.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="9375 패션왕 신해빈.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
