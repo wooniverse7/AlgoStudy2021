@@ -1,1 +1,2 @@
+//¾ğÁ¨°¡..
 #include<iostream>
