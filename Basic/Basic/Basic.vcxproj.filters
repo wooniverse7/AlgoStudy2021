@@ -66,5 +66,17 @@
     <ClCompile Include="2742 기찍N.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11021 A+B - 7.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11022 A+B - 8.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2439 별 찍기 - 2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10871 X보다 작은 수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

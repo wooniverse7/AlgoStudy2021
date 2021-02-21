@@ -60,5 +60,8 @@
     <ClCompile Include="0219_힙.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2020_Map.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
