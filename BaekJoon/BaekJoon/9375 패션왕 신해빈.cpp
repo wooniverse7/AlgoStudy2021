@@ -11,8 +11,9 @@ int main() {
 	string clth, key;
 
 	map<string, int> mp; // < 의상 종류, 해당하는 의상 수 >
-	pair<map<string, int>::iterator, bool> ck; // 이미 있는지
-
+	pair<map<string, int>::iterator, bool> chk; 
+	// 반복자로 map 배열을 끝까지 돌면서 이미 있는지 체크해줄 pair 구조체
+	
 	cin >> T;
 	while (T--) {
 		mp.clear();
@@ -20,10 +21,13 @@ int main() {
 		cin >> N;
 		while (N--) {
 			cin >> clth >> key;
-			//ck = mp.insert(pair<string, int>(key, 1)); 
-			//// map에 이미 key가 있으면 (중복key의 iter, false=0), 없으면 (insert된 key의 iter, true=1)를 리턴
-			//if (!ck.second) // ck가 false이면 이미 중복된 key가 있다
-			//	mp[key]++; // 해당 key의 int값을 +1해준다
+			chk = mp.insert(pair<string, int>(key, 1)); 
+			// map에 이미 key가 있으면 (중복key의 iter(위치), false=0) 리턴, 
+			// 없으면 (insert된 key의 iter, true=1)를 리턴
+
+			if (!chk.second) // ck가 false이면 이미 중복된 key가 있다 (0을 제외하고 다 true)
+				mp[key]++; // 해당 key의 int값을 +1해준다
+			
 			// 중복키 확인 필요 X
 			mp[key] += 1;
 		}

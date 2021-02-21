@@ -21,9 +21,10 @@ private:
 // Map container
 template<typename K, typename V>
 class Map {
+
 public:
 	class Entry;
 	class Iterator;
 
-	int size
+	int size;
 };
