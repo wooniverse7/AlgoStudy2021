@@ -63,5 +63,8 @@
     <ClCompile Include="8393 합.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="7785 회사에 있는 사람(해쉬 구현).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
