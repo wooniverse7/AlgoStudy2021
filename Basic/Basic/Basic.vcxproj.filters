@@ -99,5 +99,14 @@
     <ClCompile Include="3052 나머지.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1546 평균.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8958 OX퀴즈.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4344 평균은 넘겠지.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
