@@ -90,5 +90,14 @@
     <ClCompile Include="10818 최소, 최대.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2562 최댓값.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2577 숫자의 개수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3052 나머지.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
