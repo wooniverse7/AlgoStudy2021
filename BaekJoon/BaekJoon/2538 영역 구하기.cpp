@@ -47,8 +47,12 @@ int main() {
 		for (int y = y1; y < y2; y++)
 			for (int x = x1; x < x2; x++)
 				graph[y][x] = 1; // 사각형들을 방문 못하도록 처리
-	}
-	
+		// 출력
+		for (int y = y1; y < y2; y++)
+			for (int x = x1; x < x2; x++)
+				cout << graph[y][x]; // 사각형들을 방문 못하도록 처리
+	}	
+
 	vector<int> result; // 빈 공간 개수, 각 크기
 
 	// 빈 칸 개수와 넓이 구하기
@@ -64,11 +68,11 @@ int main() {
 
 	cout << result.size() << '\n';
 
-	sort(result.begin(), result.end());
+	//sort(result.begin(), result.end());
 
-	for (auto i : result) {
-		cout << i << " ";
-	}
-	cout << '\n';
+	//for (auto i : result) {
+	//	cout << i << " ";
+	//}
+	//cout << '\n';
 
 }
