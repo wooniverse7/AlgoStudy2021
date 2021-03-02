@@ -11,8 +11,10 @@ struct Node {
 class SLL {
 private:
 	Node * head;
+	
 public:
 	SLL() {
+		
 		head = new Node;
 		head->next = NULL;
 		head->number = 0;
@@ -35,6 +37,8 @@ public:
 		newNode->next = head->next;
 		//newNode->next = NULL; 하면 연결이 안됨
 		head->next = newNode;
+		
+		
 	}
 	//헤드 삭제
 	int remove() {
@@ -45,9 +49,12 @@ public:
 		}
 		else//(head->next->next == NULL)
 		{
+			
 			head->next = head->next->next;
-			int deleteValue = node->number;
+			int deleteValue = node->number; // 지운 노드 출력하기 위해서
 			delete node;
+
+		
 			return deleteValue;
 		}
 	}
@@ -62,6 +69,19 @@ public:
 	//리스트 비었는지 판별
 	bool empty() {
 		return head->next == NULL;
+	}
+
+	int size() const {
+		int size = 0;
+
+		if (!this->head) return size;
+
+		Node* current = head->next;
+		while (current) {
+			current = current->next;
+			size++;
+		}
+		return size;
 	}
 };
 
@@ -89,6 +109,9 @@ int main() {
 		}
 		else if (cmd == "quit") {
 			break;
+		}
+		else if (cmd == "size") {
+			cout << sll.size() << endl;
 		}
 		else
 			cout << "알맞은 입력을 해주세요" << endl;
