@@ -8,8 +8,9 @@ using namespace std;
 #define MAX 101
 int board[MAX][MAX];
 bool visited[MAX][MAX];
-int cnt[MAX][MAX]; // 최단 길이를 해당 좌표에 도착했을 때 그 좌표의 값을 출력해야한다.
-// 그냥 cnt하면 전체 칸의 넓이 구해짐(영역 구하기)
+int cnt[MAX][MAX]; 
+// 최단 길이를 해당 좌표에 도착했을 때 그 좌표의 값을 출력해야한다.
+// 배열의 해당 좌표값이 아닌 cnt값을 구하면 전체 칸의 넓이(미로 크기) 구해짐(영역 구하기)
 
 int N, M;
 
@@ -61,7 +62,7 @@ int main() {
 	for (int y = 0; y < N; y++) {
 		cin >> narr;
 		for (int x = 0; x < M; x++) {
-			board[y][x] = narr[x] - '0';
+			board[y][x] = narr[x] - '0'; // 붙여서 입력하기 위해 string으로 입력 후 변환
 		}
 	}
 	
