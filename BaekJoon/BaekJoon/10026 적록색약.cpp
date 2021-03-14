@@ -66,7 +66,7 @@ int main() {
 	// G -> R
 	for (int y = 0; y < n; y++) {
 		for (int x = 0; x < n; x++) {
-			if (board[y][x] == 'G') 
+			if (board[y][x] == 'G')
 				board[y][x] = 'R';
 		}
 	}

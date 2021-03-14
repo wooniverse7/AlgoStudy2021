@@ -120,5 +120,14 @@
     <ClCompile Include="11729 하노이 탑 이동순서.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1152 단어의 개수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1085 직사각형에서 탈출.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10026 적록색약.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

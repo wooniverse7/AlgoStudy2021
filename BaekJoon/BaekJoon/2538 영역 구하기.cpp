@@ -51,15 +51,14 @@ int main() {
 				graph[y][x] = 1; // 사각형들을 방문 못하도록 처리
 	}
 
-	// 출력
-	cout << '\n';
-	for(int i = 0; i < M; i++) {
-		for (int j = 0; j < N; j++)
-			cout << graph[i][j];
-		cout << '\n';
-	}
-	cout << '\n';
-
+	//// 출력
+	//cout << '\n';
+	//for(int i = 0; i < M; i++) {
+	//	for (int j = 0; j < N; j++)
+	//		cout << graph[i][j];
+	//	cout << '\n';
+	//}
+	//cout << '\n';
 
 	vector<int> result; // 빈 공간 개수, 각 공간 크기
 
@@ -71,13 +70,14 @@ int main() {
 				cnt = 0; // 초기화
 
 				DFS(y, x);
-				result.push_back(cnt); // 빈 칸 크기 삽입
+
+				result.push_back(cnt); // 빈 칸 개수만큼 크기 삽입
 			}
 		}
 	}
 
 
-	cout << result.size() << '\n';
+	cout << result.size() << '\n'; // 빈 칸 개수
 
 	sort(result.begin(), result.end());
 
