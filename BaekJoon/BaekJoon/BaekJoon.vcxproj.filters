@@ -144,5 +144,14 @@
     <ClCompile Include="3009 네 번째 점.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="15500 이상한 하노이 탑.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1764 듣보잡.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1946 신입 사원.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
