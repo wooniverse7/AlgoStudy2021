@@ -180,5 +180,11 @@
     <ClCompile Include="17135 캐슬 디펜스.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="4811 알약.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="16925 문자열 추측.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

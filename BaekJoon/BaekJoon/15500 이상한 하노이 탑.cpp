@@ -1,77 +1,70 @@
-#include<iostream>
-#include<stack>
-
+#include <iostream>
+#include <stack>
+#include <vector>
+#include <bitset>
 using namespace std;
 
-int plate[124];
-int x;
+stack<int> l1, l2;
+bitset<12346> b1, b2;
+vector<string> answer;
+int cnt;
+int N;
 
-void hanoi(int *plate, int from, int to, int cnt) {
-	if (plate[0] == 0) {
-		cout << from << " " << to << '\n';
-		return;
-	}
-	else {
-
-	}
+void find(int i) {
+    int move;
+    switch (i) {
+    case 1:
+        while ((move = l1.top()) < N)
+        {
+            l1.pop();
+            l2.push(move);
+            b1.reset(move);
+            b2.set(move);
+            answer.push_back("1 2\n");
+            cnt++;
+        }
+        l1.pop();
+        b1.reset(move);
+        N--;
+        answer.push_back("1 3\n");
+        cnt++;
+        break;
+    case 2:
+        while ((move = l2.top()) < N)
+        {
+            l2.pop();
+            l1.push(move);
+            b1.set(move);
+            b2.reset(move);
+            answer.push_back("2 1\n");
+            cnt++;
+        }
+        l2.pop();
+        b2.reset(move);
+        N--;
+        answer.push_back("2 3\n");
+        cnt++;
+        break;
+    }
 }
 
 int main() {
-	int n;
-	cin >> n;
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
 
-	for (int i = 0; i < n; i++) {
-		cin >> x;
-		plate[i] = x;
-	}
-	hanoi(plate, 1, 3, 0);
-	cout << cnt;
+    cin >> N;
+    for (int i = 0; i < N; i++) {
+        int n;
+        cin >> n;
+        l1.push(n);
+        b1.set(n);
+    }
+    while (N > 0)
+        if (b1[N])
+            find(1);
+        else if (b2[N])
+            find(2);
+    cout << cnt << endl;
+    for (int i = 0; i < cnt; i++)
+        cout << answer[i];
 }
-
-//void hanoi(stack<int>& hn, int from, int to) {
-//	
-//}
-//
-//int main() {
-//	int n;
-//	stack<int> hn;
-//	int x;
-//	cin >> n;
-//	for (int i = 0; i < n; i++) {
-//		cin >> x;
-//		hn.push(x);
-//	}
-//	hanoi(hn, 1, 3);
-//}
-
-//#include<iostream>
-//
-//using namespace std;
-//
-//int n, cnt;
-//
-//void hanoi(int n, int from, int to, int cnt) {
-//	int mid = 6 - from - to;
-//
-//	if (n == 1) {
-//		cout << from << " " << to << '\n';
-//		return;
-//	}
-//	else {
-//		hanoi(n - 1, from, mid, cnt + 1);
-//		hanoi(1, from, to, cnt + 1);
-//		hanoi(n - 1, mid, to, cnt + 1);
-//	}
-//	cout << cnt << '\n';
-//}
-//
-//int main() {
-//	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-//	
-//	cin >> n;
-//	int cnt = 0;
-//
-//	hanoi(n, 1, 3, 0);
-//	//cout << cnt << '\n';
-//
-//}

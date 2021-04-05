@@ -37,9 +37,8 @@ int bfs(Point s) {
 			//in boundary
 			if (np.y >= 1 && np.y <= N && np.x >= 1 && np.x <= M) {
 				// 벽이 있고 뚫을 수 있을 때
-				if (board[np.y][np.x] == 1 && block)
+				if (board[np.y][np.x] == 1 && block == 1)
 				{
-					
 					visited[np.y][np.x][block-1] = visited[cp.y][cp.x][block] + 1; // [block-1]한 후 cnt를 집어넣음
 					q.push({ np, block - 1 });
 				}
@@ -52,6 +51,7 @@ int bfs(Point s) {
 			}
 		}
 	}
+
 	return -1;
 }
 
@@ -76,3 +76,5 @@ int main() {
 	cout << bfs(start);
 	
 }
+
+// int형으로 break 여부를 나타내면 중복된 길을 갈수도 있다
