@@ -23,6 +23,7 @@ int main() {
 
 }
 
+// bottom-up 방식
 //#include <iostream>
 //using namespace std;
 //typedef long long ll;
@@ -32,7 +33,7 @@ int main() {
 //int main() {
 //	for (int h = 0; h <= 30; h++) {
 //		for (int w = 0; w <= 30; w++) {
-//			if (h > w) continue; // 조건: h는 w개수보다 많을 수 없다
+//			if (h > w) continue; // 조건: h는 w개수보다 많을 수 없다.
 //			if (h == 0) dp[w][h] = 1; // w로만 정렬
 //			else dp[w][h] = dp[w - 1][h] + dp[w][h - 1];
 //		}

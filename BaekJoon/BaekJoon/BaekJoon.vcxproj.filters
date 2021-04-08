@@ -186,5 +186,8 @@
     <ClCompile Include="16925 문자열 추측.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1107 리모컨.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
