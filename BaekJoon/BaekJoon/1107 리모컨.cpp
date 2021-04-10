@@ -29,7 +29,7 @@ int main() {
 	}
 
 	string str = to_string(n);
-	int res = abs(n - 100); // 초기값 100 -> 0
+	int res = abs(n - 100); // 숫자버튼말고 +/-만 눌렀을 때 
 	for (int i = 0; i < 1000000; i++) { // 10만 자리 모두 검사 필요
 		if (check(i)) 
 		{

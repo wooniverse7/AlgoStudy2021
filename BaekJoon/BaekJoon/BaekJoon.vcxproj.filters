@@ -189,5 +189,14 @@
     <ClCompile Include="1107 리모컨.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1747 소수, 펠린드롬.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6679 싱기한 네자리 숫자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11047 동전 0.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
