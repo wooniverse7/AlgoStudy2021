@@ -198,5 +198,11 @@
     <ClCompile Include="11047 동전 0.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2920 음계.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9625 BABBA.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
