@@ -14,7 +14,6 @@ private:
 	
 public:
 	SLL() {
-		
 		head = new Node;
 		head->next = NULL;
 		head->number = 0;

@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="10773_제로.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="13417_카드 문자열.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -45,16 +42,10 @@
     <ClCompile Include="20058 마법사 상어와 파이어스톰%28수영%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Test.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="7785 회사에 있는 사람.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="9375 패션왕 신해빈.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2739 구구단.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="10950 A+B - 3.cpp">
@@ -120,9 +111,6 @@
     <ClCompile Include="11729 하노이 탑 이동순서.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1152 단어의 개수.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="1085 직사각형에서 탈출.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -133,9 +121,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="10809 알파벳 찾기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2577 숫자의 개수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="1157 단어 공부.cpp">
@@ -160,9 +145,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="10860 덱.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="10773 제로.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="9012 괄호.cpp">
@@ -198,10 +180,43 @@
     <ClCompile Include="11047 동전 0.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="2920 음계.cpp">
+    <ClCompile Include="9625 BABBA.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="9625 BABBA.cpp">
+    <ClCompile Include="10813 공 바꾸기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Bronze.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10773 제로%28배열, 재%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10773 제로%28스택%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1673 치킨 쿠폰.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2747 피보나치 수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9461 파도반 수열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1003 피보나치 함수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2251 물통.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10451 순열 사이클.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9613 GCD.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
